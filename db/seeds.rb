@@ -7,7 +7,7 @@
 #   Character.create(name: "Luke", movie: movies.first)
 
 # puts "Destroying movies"
-# Restaurant.destroy_all
+# Movie.destroy_all
 # puts "Destroyed!"
 
 # puts "Creating 10 movies"
@@ -15,11 +15,11 @@
 #   movie = Movie.create( # create instead of new since create does save
 #     title: Faker::Movie.title,
 #     overview: Faker::Movie.quote,
-#     poster_url: xxxx
-#     rating: xxxx
+#     poster_url: Faker::LoremFlickr.image,
+#     rating: rand(0..10)
 #     # class::constant.method
 #   )
-#   puts "#{movie.name} created."
+#   puts "#{movie.title} created."
 # end
 # puts "Done!"
 

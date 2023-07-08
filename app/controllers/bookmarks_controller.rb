@@ -21,16 +21,14 @@ class BookmarksController < ApplicationController
   end
 
   def destroy
-    # DELETE
-    @bookmark = Bookmark.find(params[:id])
+    @bookmark = Bookmark.find(params[:list_id])
     @bookmark.destroy
-    # REDIRECT DE TYPE GET (see_other is used after destroy when we do get request for redirect)
-    redirect_to list_path(@bookmark.list), status: :see_other
+    redirect_to list_path(@list), status: :see_other
   end
 
   private
 
   def bookmark_params
-    params.require(:bookmark).permit(:content)
+    params.require(:bookmark).permit(:comment, :movie_id)
   end
 end
