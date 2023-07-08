@@ -1,0 +1,13 @@
+<div class ="container mt-5">
+  <h1>Add a new bookmark</h1>
+  <div class="mt-5">
+    <%= simple_form_for([@list, @bookmark]) do |f| %>
+    <%= f.association :movie %>
+    <%= f.association :list %>
+    <%= f.input :comment %>
+    <%= f.submit %>
+    <% end %>
+  </div>
+  <br>
+  <div> <%= link_to "Back", lists_path(@list), class: "btn btn-primary" %></div>
+</div>
