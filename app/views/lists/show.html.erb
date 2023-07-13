@@ -2,7 +2,6 @@
   <h1><%= @list.name %></h1>
   <div>
     <% @list.bookmarks.each do |bookmark| %>
-      <%= link_to "Remove bookmark", bookmark_path(bookmark), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}, class: "btn btn-danger"%>
       <ul>
         <li><%= bookmark.movie.title %></li>
         <li><%= bookmark.movie.poster_url %></li>
@@ -11,6 +10,7 @@
       </ul>
       <p>Comment:</p>
       <p><%= bookmark.comment %></p>
+      <%= link_to "Remove bookmark", bookmark_path(bookmark), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}, class: "btn btn-danger"%>
     <% end %>
   </div>
   <div>
