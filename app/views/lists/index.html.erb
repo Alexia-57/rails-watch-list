@@ -1,8 +1,14 @@
 <div class ="container mt-5">
+  <%= cl_image_tag("pexels-donald-tong-109669_jgi8ey", height: 300, crop: :fill) %>
   <h1>All lists</h1>
   <ul>
     <% @lists.each do |list| %>
+    <div>
       <li><%= link_to list.name, list_path(list) %></li>
+      <% if list.photo.attached? %>
+        <%= cl_image_tag list.photo.key, width: 400, height: 300 %>
+      <% end %>
+    </div>
     <% end %>
   </ul>
   <div>
