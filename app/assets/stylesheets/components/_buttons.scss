@@ -1,4 +1,27 @@
-.btn-addlist {
+.button-container {
+  display: flex; /* Use flexbox */
+  gap: 10px; /* Add some spacing between buttons */
+  justify-content: center;
+  margin-top: 35px;
+}
+
+.btn-basic {
+  border-radius: 10px;
+  background-color: #9c794f;
+  color: #fff;
+  opacity: 0.9;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease;
+  padding: 10px;
+  text-decoration: none;
+
+  &:hover {
+    background-color: #baa488;
+    opacity: 1;
+  }
+}
+
+.btn-back {
   border-radius: 10px;
   background-color: #808080;
   color: #fff;
@@ -10,6 +33,46 @@
 
   &:hover {
     background-color: #a0a0a0;
+    opacity: 1;
+  }
+}
+
+.btn-delete {
+  border-radius: 10px;
+  background-color: #9e1a1a;
+  color: #fff;
+  opacity: 0.9;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease;
+  padding: 10px;
+  text-decoration: none;
+  width: 75px;
+  align-items: right;
+
+  &:hover {
+    background-color: #b84545;
+    opacity: 1;
+  }
+}
+
+.btn-x {
+  border-radius: 50px;
+  background-color: #9e1a1a;
+  color: #ffffff;
+  opacity: 0.9;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease;
+  padding-left: 6px;
+  padding-right: 6px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: lighter;
+  top: 9px;
+  right: 9px;
+  position: absolute;
+
+  &:hover {
+    background-color: #b84545;
     opacity: 1;
   }
 }

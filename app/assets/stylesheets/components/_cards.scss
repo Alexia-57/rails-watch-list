@@ -1,0 +1,30 @@
+/*fixes the images and cards so they don't get bigger on larger screen*/
+// body {
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-around;
+//   font-family: Open-sans, sans-serif;
+// }
+
+.card-category {
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+  width: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  margin: 10px;
+  position: relative;
+}
+
+.card-name {
+  color: white;
+  text-decoration: none;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+  font-size: 30px;
+}

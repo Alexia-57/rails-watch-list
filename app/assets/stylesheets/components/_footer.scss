@@ -1,0 +1,15 @@
+.footer {
+  background: #F4F4F4;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  height: 50px;
+  padding: 0px 50px;
+  color: rgba(0,0,0,0.3);
+  border-top: 1px solid rgb(207, 202, 202);
+  margin-top: 45px;
+}
+
+.footer .fa-heart {
+  color: #761d1d;
+}

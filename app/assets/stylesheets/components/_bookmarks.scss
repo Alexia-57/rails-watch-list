@@ -1,0 +1,58 @@
+// .bookmark-info ul {
+//   list-style: none;
+// }
+
+// .bookmark-info {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   border-radius: 5px;
+//   box-shadow: 0 0 15px rgba(0,0,0,0.2);
+//   margin: 10px;
+// }
+
+// .bookmark-contents {
+//   position: relative
+// }
+
+// .bookmark-info {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   border-radius: 5px;
+//   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+//   margin: 10px;
+// }
+
+.bookmark-contents {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  overflow-wrap: break-word;
+  padding: 30px;
+}
+
+ul {
+  list-style: none; /* Remove default bullet points */
+  padding: 0; /* Remove default padding for ul */
+}
+
+li {
+  margin: 5px 0; /* Add margin for spacing between li items */
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px; /* Add margin for spacing below content */
+}
+
+@media screen and (max-width: 480px) {
+  .bookmark-contents {
+    font-size: 14px; /* Adjust the font size for smaller screens */
+  }
+}

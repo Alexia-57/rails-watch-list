@@ -25,7 +25,6 @@ class BookmarksController < ApplicationController
     # @list = @bookmark.list # Retrieve the associated list
     @bookmark.destroy
     redirect_to list_path(@bookmark.list), status: :see_other
-    raise
   end
 
   private

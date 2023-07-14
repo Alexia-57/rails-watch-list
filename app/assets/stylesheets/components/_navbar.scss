@@ -1,5 +1,4 @@
 .navbar-lewagon {
-  justify-content: space-between;
   background: white;
 }
 
@@ -13,6 +12,12 @@
 
 .navbar-no-link-style {
   text-decoration: none;
-  color:rgb(114, 113, 113);
-  padding: 8px;
+  justify-content: right;
+  padding-right: 40px;
+  color: #c7c1c1;
+
+  &:hover {
+    color: rgb(133, 132, 132);
+    opacity: 1;
+  }
 }
