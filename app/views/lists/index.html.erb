@@ -1,5 +1,13 @@
+<div class="banner-container">
+<div class="banner" style="background-image: url('<%= cl_image_path("pexels-donald-tong-109669_jgi8ey", crop: :fill) %>');">
+  <div class="container">
+    <h1>My movie lists</h1>
+    <p>Keep track of your favorite movies</p>
+    <%= link_to "Add a list", new_list_path(@list), class: "btn-addlist" %>
+  </div>
+</div>
+
 <div class ="container mt-5">
-  <%= cl_image_tag("pexels-donald-tong-109669_jgi8ey", height: 300, crop: :fill) %>
   <h1>All lists</h1>
   <ul>
     <% @lists.each do |list| %>
@@ -8,10 +16,8 @@
       <% if list.photo.attached? %>
         <%= cl_image_tag list.photo.key, width: 400, height: 300 %>
       <% end %>
+      <%= link_to "Remove list", delete_list_path(list), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}, class: "btn btn-danger"%>
     </div>
     <% end %>
   </ul>
-  <div>
-    <%= link_to "Add a list", new_list_path(@list), class: "btn btn-primary" %>
-  </div>
 </div>

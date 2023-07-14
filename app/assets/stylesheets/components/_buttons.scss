@@ -1,0 +1,15 @@
+.btn-addlist {
+  border-radius: 10px;
+  background-color: #808080;
+  color: #fff;
+  opacity: 0.9;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease;
+  padding: 10px;
+  text-decoration: none;
+
+  &:hover {
+    background-color: #a0a0a0;
+    opacity: 1;
+  }
+}

@@ -11,5 +11,7 @@ Rails.application.routes.draw do
   resources :lists, only: [:index, :new, :create, :show] do
     resources :bookmarks, only: [:new, :create]
   end
+    delete '/lists/:id', to: 'lists#destroy', as: :delete_list #put here as I want alias
+
     resources :bookmarks, only: [:destroy]
 end

@@ -11,6 +11,13 @@
   </head>
 
   <body>
+
+    <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+      <div class="navbar-nav ms-auto">
+        <%= link_to "Add a list", new_list_path(@list), class: "navbar-no-link-style" %>
+      </div>
+    </div>
+
     <%= yield %>
   </body>
 </html>
